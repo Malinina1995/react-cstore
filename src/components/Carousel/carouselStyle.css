@@ -1,0 +1,103 @@
+.carusel{
+  height: 520px;
+  width: 100%;
+  background-color: rgb(158, 147, 147);
+  position: relative;
+}
+
+.carusel-img {
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 520px;
+  background-position: center;
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  border: solid 1px #d6d6d6;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background: #d6d6d6;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .1}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .1}
+  to {opacity: 1}
+}
+
+.carusel:hover .shange-slide_btn{
+  display: block;
+}
+
+.shange-slide_btn{
+  background-position: center;
+  width: 32px;
+  height: 60px;
+  position: absolute;
+  background-size: 100%;
+  top: 230px;
+  border: none;
+  cursor: pointer;
+  opacity: .2;
+  display: none;
+}
+
+.shange-slide_btn:focus {
+    outline: none;
+}
+
+.shange-slide_btn:hover{
+  background-color: none;
+  opacity: .4;
+}
+
+.previous{
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%09%20%20height%3D%2260px%22%20viewBox%3D%220%200%2031.999%2060%22%20enable-background%3D%22new%200%200%2031.999%2060%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20fill%3D%22%23000000%22%20id%3D%22strSlide_x5F_hover%22%20points%3D%2230.59%2C0%2031.999%2C1.403%202.839%2C30.001%2031.999%2C58.597%2030.59%2C60%200%2C30.001%20%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+  left: 20px;
+}
+
+.next{
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%09%20%20height%3D%2260px%22%20viewBox%3D%220%200%2031.999%2060%22%20enable-background%3D%22new%200%200%2031.999%2060%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20fill%3D%22%23000000%22%20id%3D%22strSlide_x5F_hover_1_%22%20%20points%3D%221.409%2C60%200%2C58.597%2029.16%2C29.999%200%2C1.403%201.409%2C0%2031.999%2C29.999%20%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+  right: 20px;
+}
+
+.dots {
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+}

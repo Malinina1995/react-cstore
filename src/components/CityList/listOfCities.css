@@ -1,0 +1,213 @@
+.top-header-geolocation-city{
+  width: 620px;
+  height: 527px;
+  position: absolute;
+  top: 40px;
+  z-index: 13;
+  max-width: 620px;
+  padding: 30px 0 35px;
+  background:#fff;
+  border: 1px solid #e0e0e0;
+  cursor: default;
+  animation: 2s; 
+  overflow: hidden;
+}
+
+.top-header-geolocation-city-header-close{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%09%20%20%20viewBox%3D%220%200%2017%2017%22%20enable-background%3D%22new%200%200%2017%2017%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22close_x5F_hover%22%3E%09%3Cg%3E%09%09%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20fill%3D%22%23cccccc%22%20d%3D%22M10.01%2C8.498l6.674-6.693c0.422-0.413%2C0.422-1.082%2C0-1.495%09%09%09c-0.42-0.413-1.104-0.413-1.523%2C0L8.493%2C6.995L1.758%2C0.32c-0.403-0.427-1.055-0.427-1.457%2C0c-0.401%2C0.429-0.401%2C1.123%2C0%2C1.551%09%09%09l6.689%2C6.63l-6.676%2C6.694c-0.42%2C0.412-0.42%2C1.082%2C0%2C1.496c0.422%2C0.412%2C1.104%2C0.412%2C1.525%2C0l6.667-6.687l6.734%2C6.675%09%09%09c0.404%2C0.428%2C1.055%2C0.428%2C1.457%2C0c0.4-0.428%2C0.4-1.123%2C0-1.551L10.01%2C8.498z%22%2F%3E%09%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+}
+
+.top-header-geolocation-city-header-close:hover{
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%09%20%20%20viewBox%3D%220%200%2017%2017%22%20enable-background%3D%22new%200%200%2017%2017%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22close_x5F_hover%22%3E%09%3Cg%3E%09%09%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20fill%3D%22%23999999%22%20d%3D%22M10.01%2C8.498l6.674-6.693c0.422-0.413%2C0.422-1.082%2C0-1.495%09%09%09c-0.42-0.413-1.104-0.413-1.523%2C0L8.493%2C6.995L1.758%2C0.32c-0.403-0.427-1.055-0.427-1.457%2C0c-0.401%2C0.429-0.401%2C1.123%2C0%2C1.551%09%09%09l6.689%2C6.63l-6.676%2C6.694c-0.42%2C0.412-0.42%2C1.082%2C0%2C1.496c0.422%2C0.412%2C1.104%2C0.412%2C1.525%2C0l6.667-6.687l6.734%2C6.675%09%09%09c0.404%2C0.428%2C1.055%2C0.428%2C1.457%2C0c0.4-0.428%2C0.4-1.123%2C0-1.551L10.01%2C8.498z%22%2F%3E%09%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat;
+  background-size: 100%;
+  background-position: center;
+  transition: all .1s ease-in-out;
+  width: 16px;
+  height: 16px;
+}
+
+.top-header-geolocation-city-header{
+  color: #333;
+  font-size: 28px;
+  margin: 30px 0 4px 60px;
+}
+
+.top-header-geolocation-city-header-title{
+  margin-bottom: 15px;
+  cursor: text;
+}
+
+.top-header-geolocation-city-header-cities{
+  font-size: 14px;
+  color:#999999;
+  cursor: text;
+}
+
+.top-header-geolocation-city-header-cities-search{
+  position: relative;
+  width: 360px;
+}
+
+.search-cities-input{
+  margin-top: 20px;
+  background:#fff;
+  border: solid 1px #c2c2c2;
+  border-radius: 500px;
+  font-size: 15px;
+  height: 40px;
+  width: 360px;
+  padding: 0 35px 0 25px;
+  transition: all .1s ease-in-out;
+}
+
+.search-cities-input:hover{
+  border: solid 1px #999;
+  transition: all .1s ease-in-out;
+}
+
+.search-cities-btn{
+  position: absolute;
+  margin-top: 20px;
+  width: 40px;
+  height: 40px;
+  background:  #3E8FCF;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  top: 0;
+  right: 0px;
+}
+
+.search-cities-btn::after{
+  content: '';
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%09%20%20%20viewBox%3D%220%200%2018.999%2020%22%20enable-background%3D%22new%200%200%2018.999%2020%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20id%3D%22search%22%20fill%3D%22%23ffffff%22%20d%3D%22M11.499%2C0c-4.143%2C0-7.5%2C3.358-7.5%2C7.5c0%2C1.925%2C0.731%2C3.676%2C1.924%2C5.003L0.326%2C18.1%09c-0.436%2C0.435-0.436%2C1.14%2C0%2C1.574c0.435%2C0.436%2C1.139%2C0.436%2C1.573%2C0l5.748-5.747C8.774%2C14.604%2C10.089%2C15%2C11.499%2C15%09c4.143%2C0%2C7.5-3.357%2C7.5-7.5C18.999%2C3.358%2C15.642%2C0%2C11.499%2C0z%20M11.499%2C13c-3.033%2C0-5.5-2.467-5.5-5.5S8.466%2C2%2C11.499%2C2%09s5.5%2C2.467%2C5.5%2C5.5S14.532%2C13%2C11.499%2C13z%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  background-position: center;
+  width: 19px;
+  height: 20.0011px;
+}
+
+.top-header-geolocation-city-header-cities-search input{
+  padding-right: 75px;
+}
+
+.top-header-geolocation-selector.open{
+  height: 41px;
+  position: absolute;
+  top: 0;
+  left: -1px;
+  z-index: 14;
+  border-left: 1px solid  #e0e0e0;
+  border-right: 1px solid  #e0e0e0;
+  border-bottom: 1px solid  #fff; 
+}
+
+.top-header-geolocation-city-header-cities-search-clear{
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  display: none;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%09%20%20%20viewBox%3D%220%200%2017%2017%22%20enable-background%3D%22new%200%200%2017%2017%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22close_x5F_hover%22%3E%09%3Cg%3E%09%09%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20fill%3D%22%23cccccc%22%20d%3D%22M10.01%2C8.498l6.674-6.693c0.422-0.413%2C0.422-1.082%2C0-1.495%09%09%09c-0.42-0.413-1.104-0.413-1.523%2C0L8.493%2C6.995L1.758%2C0.32c-0.403-0.427-1.055-0.427-1.457%2C0c-0.401%2C0.429-0.401%2C1.123%2C0%2C1.551%09%09%09l6.689%2C6.63l-6.676%2C6.694c-0.42%2C0.412-0.42%2C1.082%2C0%2C1.496c0.422%2C0.412%2C1.104%2C0.412%2C1.525%2C0l6.667-6.687l6.734%2C6.675%09%09%09c0.404%2C0.428%2C1.055%2C0.428%2C1.457%2C0c0.4-0.428%2C0.4-1.123%2C0-1.551L10.01%2C8.498z%22%2F%3E%09%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+}
+
+.top-header-geolocation-city-header-cities-search-clear:hover{
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%09%20%20%20viewBox%3D%220%200%2017%2017%22%20enable-background%3D%22new%200%200%2017%2017%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22close_x5F_hover%22%3E%09%3Cg%3E%09%09%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20fill%3D%22%23999999%22%20d%3D%22M10.01%2C8.498l6.674-6.693c0.422-0.413%2C0.422-1.082%2C0-1.495%09%09%09c-0.42-0.413-1.104-0.413-1.523%2C0L8.493%2C6.995L1.758%2C0.32c-0.403-0.427-1.055-0.427-1.457%2C0c-0.401%2C0.429-0.401%2C1.123%2C0%2C1.551%09%09%09l6.689%2C6.63l-6.676%2C6.694c-0.42%2C0.412-0.42%2C1.082%2C0%2C1.496c0.422%2C0.412%2C1.104%2C0.412%2C1.525%2C0l6.667-6.687l6.734%2C6.675%09%09%09c0.404%2C0.428%2C1.055%2C0.428%2C1.457%2C0c0.4-0.428%2C0.4-1.123%2C0-1.551L10.01%2C8.498z%22%2F%3E%09%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat;
+  background-size: 100%;
+  background-position: center;
+  transition: all .1s ease-in-out;
+  width: 16px;
+  height: 16px;
+}
+
+.top-header-nothing-span{
+  color: #999999;
+}
+
+.top-header-nothing{
+  margin-left: 30px;
+  padding-bottom: 5px;
+  overflow: hidden;
+}
+
+.top-header-geolocation-city-main-column{
+  margin-left: 30px;
+  overflow: auto;
+  height: 300px;
+  margin-top: 30px;
+}
+
+.top-header-geolocation-city-main-row{
+  margin-bottom: 20px;
+  font-size: 14px;
+  margin-left: 30px;
+  transition: .3s;
+}
+
+.top-header-geolocation-city-main-row span:hover{
+  color: #3e8fcf;
+}
+
+.top-header-geolocation-city-list{
+  display: flex;
+  padding-left: 30px;
+}
+
+.top-header-geolocation-city-list-column{
+  flex-basis: 33%;
+}
+
+.top-header-geolocation-city-list-row{
+  margin-bottom: 20px;
+  font-size: 14px;
+  position: relative;
+}
+
+.letter{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -20px;
+  color: #999;
+  font-weight: bold;
+}
+
+.firstCity{
+  font-weight: bold;
+}
+
+.marginBottom{
+  margin-bottom: 10px;
+}
+
+.cityName{
+  font-size: 14px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.cityName:hover{
+  color: #3e8fcf;
+}
+
+.activeCityName{
+  color: #3e8fcf;
+}

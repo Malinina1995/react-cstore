@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "MyriadPro-Regular";
+    src: url("https://www.c-store.ru/fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"),url("https://www.c-store.ru/fonts/MyriadPro-Regular.otf") format("opentype"),url("https://www.c-store.ru/fonts/MyriadPro-Regular.woff") format("woff"),url("/fonts/MyriadPro-Regular.ttf") format("truetype"),url("https://www.c-store.ru/fonts/MyriadPro-Regular.svg#MyriadPro-Regular") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'MyriadPro-Light';
+    src: url("https://www.c-store.ru/fonts/MyriadPro-Light.eot?#iefix") format("embedded-opentype"),url("https://www.c-store.ru/fonts/MyriadPro-Light.otf") format("opentype"),url("/../fonts/MyriadPro-Light.woff") format("woff"),url("https://www.c-store.ru/fonts/MyriadPro-Light.ttf") format("truetype"),url("https://www.c-store.ru/fonts/MyriadPro-Light.svg#MyriadPro-Light") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "MyriadPro-Bold";
+    src: url("https://www.c-store.ru/fonts/MyriadPro-Bold.eot?#iefix") format("embedded-opentype"),url("https://www.c-store.ru/fonts/MyriadPro-Bold.otf") format("opentype"),url("https://www.c-store.ru/fonts/MyriadPro-Bold.woff") format("woff"),url("https://www.c-store.ru/fonts/MyriadPro-Bold.ttf") format("truetype"),url("https://www.c-store.ru/fonts/MyriadPro-Bold.svg#MyriadPro-Bold") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "MyriadPro-SemiBold";
+    src: url("https://www.c-store.ru/fonts/MyriadPro-SemiBold.eot?#iefix") format("embedded-opentype"),url("https://www.c-store.ru/fonts/MyriadPro-SemiBold.otf") format("opentype"),url("https://www.c-store.ru/fonts/MyriadPro-SemiBold.woff") format("woff"),url("https://www.c-store.ru/fonts/MyriadPro-SemiBold.ttf") format("truetype"),url("https://www.c-store.ru/fonts/MyriadPro-SemiBold.svg#MyriadPro-Bold") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+body{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  color:#333;
+  font-family: 'MyriadPro-Regular', Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+li{
+  list-style-type: none;
+}
+
+input, button{
+  outline: none;
+}
+
+ol {
+  list-style: none;
+  display: flex;
+  padding-left: 20px;
+  margin-top: 12px;
+}

@@ -1,0 +1,63 @@
+.imageMenu-wrapper{
+  max-width: 984px;
+  margin: 0 auto;
+  height: 222px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.categoryItem{
+  font-size: 18px;
+  height: 122px;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.categoryItem a {
+  color:#4c4c4c;
+  display: inline-block;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.categoryItem a:hover{
+  color: #3e8fcf;
+  transition: .3s;
+}
+
+.categoryItem-img_first{
+ background: url('https://static.c-store.ru/upload/files/image/c-store-category-main-img-id/360/1_photo_80.png');
+ height: 80px;
+ width: 48px;
+}
+
+.categoryItem-img_second{
+  background: url('https://static.c-store.ru/upload/files/image/c-store-category-main-img-id/079/ipad_site.png');
+  height: 80px;
+  width: 81px;
+}
+
+.categoryItem-img_third{
+ background: url('https://static.c-store.ru/upload/files/image/c-store-category-main-img-id/533/watch_photo_nofon_80.png');
+ height: 80px;
+ width: 48px;
+}
+
+.categoryItem-img_fourth{
+ background: url('https://static.c-store.ru/upload/files/image/c-store-category-main/mac.png');
+ height: 80px;
+ width: 108px;
+}
+
+.categoryItem-img_fifth{
+ background: url('https://static.c-store.ru/upload/files/image/c-store-category-main/beats.png');
+ height: 76.1167px;
+ width: 124px;
+}
+
+.categoryItem-title{
+  margin-top: 20px;
+  text-align: center;
+}

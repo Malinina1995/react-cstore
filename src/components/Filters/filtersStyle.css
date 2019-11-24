@@ -1,0 +1,232 @@
+.filters{
+  background-color: #fff;
+  height: 743px;
+  border-bottom: solid 1px #e0e0e0;
+}
+
+.filtersHeaderTop-wrapper{
+  max-width: 984px;
+}
+
+.filtersHeader{
+  height: 130px;
+  width: 510px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;  
+}
+
+.filtersHeader_bottomLine{
+  width: 100%;
+  border-bottom: solid 1px #e0e0e0;
+  display: flex;
+  justify-content: center;
+}
+
+.filtersHeader li{
+  width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.filtersHeader_name{
+  margin-top: 15px;
+}
+
+.filtersHeader_first{
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%09%20%20%20viewBox%3D%220%200%2023%2026%22%20enable-background%3D%22new%200%200%2023%2026%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M2.556%2C0C1.144%2C0%2C0%2C1.153%2C0%2C2.576v15.456c0%2C1.423%2C1.144%2C2.576%2C2.556%2C2.576h2.556v-3.864H2.556V2.576h12.778%09C15.333%2C1.153%2C14.19%2C0%2C12.778%2C0H2.556z%20M10.222%2C5.152c-1.412%2C0-2.556%2C1.153-2.556%2C2.576v15.456c0%2C1.423%2C1.144%2C2.576%2C2.556%2C2.576%09h10.222c1.412%2C0%2C2.556-1.153%2C2.556-2.576V7.728c0-1.423-1.144-2.576-2.556-2.576H10.222z%20M10.222%2C7.728h10.222v14.168H10.222V7.728z%09%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+  background-size: 100%;
+  width: 23px;
+  height: 26px;
+}
+
+.filtersHeader_third{
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%09%20%20%20viewBox%3D%220%200%2027%2026%22%20enable-background%3D%22new%200%200%2027%2026%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M12.15%2C0l-1.047%2C4.677l-3.66%2C4.121C6.997%2C9.301%2C6.75%2C9.953%2C6.75%2C10.629v12.634C6.75%2C24.775%2C7.958%2C26%2C9.45%2C26%09h10.842c1%2C0%2C1.906-0.597%2C2.312-1.523l4.053-9.245C26.883%2C14.72%2C27%2C14.165%2C27%2C13.604v-1.288c0-1.505-1.215-2.737-2.7-2.737h-9.45%09c0%2C0%2C1.35-3.244%2C1.35-5.661C16.2%2C0.166%2C12.15%2C0%2C12.15%2C0z%20M0%2C9.579V26h4.05V9.579H0z%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+  background-size: 100%;
+  width: 27px;
+  height: 26px;
+}
+
+.filtersHeader_second{
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%09%20%20%20viewBox%3D%220%200%2027.985%2026.411%22%20enable-background%3D%22new%200%200%2027.985%2026.411%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M5.732%2C26.411c-0.112%2C0-0.224-0.055-0.336-0.111c-0.168-0.111-0.28-0.388-0.224-0.61l2.464-9.099%09l-7.392-5.937c-0.224-0.111-0.28-0.388-0.224-0.61C0.076%2C9.821%2C0.3%2C9.654%2C0.524%2C9.654l9.52-0.499l3.416-8.822%09C13.572%2C0.166%2C13.796%2C0%2C14.02%2C0s0.448%2C0.166%2C0.504%2C0.333l3.416%2C8.822l9.52%2C0.499c0.224%2C0%2C0.448%2C0.166%2C0.504%2C0.388%09c0.056%2C0.222%2C0%2C0.444-0.168%2C0.61l-7.392%2C5.937l2.464%2C9.099c0.056%2C0.222%2C0%2C0.444-0.224%2C0.61c-0.168%2C0.111-0.448%2C0.166-0.616%2C0%09l-8.008-5.105L6.012%2C26.3C5.9%2C26.411%2C5.844%2C26.411%2C5.732%2C26.411z%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+  background-size: 100%;
+  width: 28px;
+  height: 26px;
+}
+
+.filtersHeader-item:hover .filtersHeader_first{
+    background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%09%20%20%20viewBox%3D%220%200%2023%2026%22%20enable-background%3D%22new%200%200%2023%2026%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%233e8fcf%22%20d%3D%22M2.556%2C0C1.144%2C0%2C0%2C1.153%2C0%2C2.576v15.456c0%2C1.423%2C1.144%2C2.576%2C2.556%2C2.576h2.556v-3.864H2.556V2.576h12.778%09C15.333%2C1.153%2C14.19%2C0%2C12.778%2C0H2.556z%20M10.222%2C5.152c-1.412%2C0-2.556%2C1.153-2.556%2C2.576v15.456c0%2C1.423%2C1.144%2C2.576%2C2.556%2C2.576%09h10.222c1.412%2C0%2C2.556-1.153%2C2.556-2.576V7.728c0-1.423-1.144-2.576-2.556-2.576H10.222z%20M10.222%2C7.728h10.222v14.168H10.222V7.728z%09%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 23px;
+    height: 26px;
+}
+
+.filtersHeader-item:hover .filtersHeader_second{
+    background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%09%20%20%20viewBox%3D%220%200%2027.985%2026.411%22%20enable-background%3D%22new%200%200%2027.985%2026.411%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%233e8fcf%22%20d%3D%22M5.732%2C26.411c-0.112%2C0-0.224-0.055-0.336-0.111c-0.168-0.111-0.28-0.388-0.224-0.61l2.464-9.099%09l-7.392-5.937c-0.224-0.111-0.28-0.388-0.224-0.61C0.076%2C9.821%2C0.3%2C9.654%2C0.524%2C9.654l9.52-0.499l3.416-8.822%09C13.572%2C0.166%2C13.796%2C0%2C14.02%2C0s0.448%2C0.166%2C0.504%2C0.333l3.416%2C8.822l9.52%2C0.499c0.224%2C0%2C0.448%2C0.166%2C0.504%2C0.388%09c0.056%2C0.222%2C0%2C0.444-0.168%2C0.61l-7.392%2C5.937l2.464%2C9.099c0.056%2C0.222%2C0%2C0.444-0.224%2C0.61c-0.168%2C0.111-0.448%2C0.166-0.616%2C0%09l-8.008-5.105L6.012%2C26.3C5.9%2C26.411%2C5.844%2C26.411%2C5.732%2C26.411z%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 28px;
+    height: 26px;
+}
+
+.filtersHeader-item:hover .filtersHeader_third{
+    background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%09%20%20%20viewBox%3D%220%200%2027%2026%22%20enable-background%3D%22new%200%200%2027%2026%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%233e8fcf%22%20d%3D%22M12.15%2C0l-1.047%2C4.677l-3.66%2C4.121C6.997%2C9.301%2C6.75%2C9.953%2C6.75%2C10.629v12.634C6.75%2C24.775%2C7.958%2C26%2C9.45%2C26%09h10.842c1%2C0%2C1.906-0.597%2C2.312-1.523l4.053-9.245C26.883%2C14.72%2C27%2C14.165%2C27%2C13.604v-1.288c0-1.505-1.215-2.737-2.7-2.737h-9.45%09c0%2C0%2C1.35-3.244%2C1.35-5.661C16.2%2C0.166%2C12.15%2C0%2C12.15%2C0z%20M0%2C9.579V26h4.05V9.579H0z%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 27px;
+    height: 26px;
+}
+
+.filtersHeader-item:hover .filtersHeader_name{
+  color: #3e8fcf;
+}
+
+.filtersHeader_name{
+  transition: all 0.2s ease-in-out;
+}
+
+.actived {
+  transition: all 0.2s ease-in-out;
+  border-bottom: 1px solid #3e8fcf;
+}
+
+.actived .filtersHeader_first{
+    background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%09%20%20%20viewBox%3D%220%200%2023%2026%22%20enable-background%3D%22new%200%200%2023%2026%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%233e8fcf%22%20d%3D%22M2.556%2C0C1.144%2C0%2C0%2C1.153%2C0%2C2.576v15.456c0%2C1.423%2C1.144%2C2.576%2C2.556%2C2.576h2.556v-3.864H2.556V2.576h12.778%09C15.333%2C1.153%2C14.19%2C0%2C12.778%2C0H2.556z%20M10.222%2C5.152c-1.412%2C0-2.556%2C1.153-2.556%2C2.576v15.456c0%2C1.423%2C1.144%2C2.576%2C2.556%2C2.576%09h10.222c1.412%2C0%2C2.556-1.153%2C2.556-2.576V7.728c0-1.423-1.144-2.576-2.556-2.576H10.222z%20M10.222%2C7.728h10.222v14.168H10.222V7.728z%09%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 23px;
+    height: 26px;
+}
+
+.actived .filtersHeader_name{
+  color: #3e8fcf;
+  margin-bottom: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.actived .filtersHeader_second{
+    background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%09%20%20%20viewBox%3D%220%200%2027.985%2026.411%22%20enable-background%3D%22new%200%200%2027.985%2026.411%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%233e8fcf%22%20d%3D%22M5.732%2C26.411c-0.112%2C0-0.224-0.055-0.336-0.111c-0.168-0.111-0.28-0.388-0.224-0.61l2.464-9.099%09l-7.392-5.937c-0.224-0.111-0.28-0.388-0.224-0.61C0.076%2C9.821%2C0.3%2C9.654%2C0.524%2C9.654l9.52-0.499l3.416-8.822%09C13.572%2C0.166%2C13.796%2C0%2C14.02%2C0s0.448%2C0.166%2C0.504%2C0.333l3.416%2C8.822l9.52%2C0.499c0.224%2C0%2C0.448%2C0.166%2C0.504%2C0.388%09c0.056%2C0.222%2C0%2C0.444-0.168%2C0.61l-7.392%2C5.937l2.464%2C9.099c0.056%2C0.222%2C0%2C0.444-0.224%2C0.61c-0.168%2C0.111-0.448%2C0.166-0.616%2C0%09l-8.008-5.105L6.012%2C26.3C5.9%2C26.411%2C5.844%2C26.411%2C5.732%2C26.411z%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 28px;
+    height: 26px;
+}
+
+.actived .filtersHeader_third{
+    background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%09%20%20%20viewBox%3D%220%200%2027%2026%22%20enable-background%3D%22new%200%200%2027%2026%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%233e8fcf%22%20d%3D%22M12.15%2C0l-1.047%2C4.677l-3.66%2C4.121C6.997%2C9.301%2C6.75%2C9.953%2C6.75%2C10.629v12.634C6.75%2C24.775%2C7.958%2C26%2C9.45%2C26%09h10.842c1%2C0%2C1.906-0.597%2C2.312-1.523l4.053-9.245C26.883%2C14.72%2C27%2C14.165%2C27%2C13.604v-1.288c0-1.505-1.215-2.737-2.7-2.737h-9.45%09c0%2C0%2C1.35-3.244%2C1.35-5.661C16.2%2C0.166%2C12.15%2C0%2C12.15%2C0z%20M0%2C9.579V26h4.05V9.579H0z%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 27px;
+    height: 26px;
+}
+
+.mouseOver {
+  opacity: .4;
+}
+
+.filtersMain{
+  margin: 0;
+  padding: 0;
+  height: 622px;
+  box-sizing: border-box;
+}
+
+.filtersMain-wrapper{
+  max-width: 984px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.currentFilter {
+  text-align: center;
+  font-size: 34px;
+  color:#333;
+  margin: 30px 0 30px 0;
+}
+
+.product{
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;      
+}
+
+.filtersMain{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+.filterMain-products{
+  display: flex;
+  justify-content: center;
+}
+
+.filterMain-product{
+  width: 25%;
+}
+
+.product-link{
+  cursor: pointer;
+}
+
+.product-link:hover .product-title{
+  color: #489de0;
+  transition: .2s ease-in-out;
+}
+
+.product-title{
+  color:#666;
+  line-height: 24px;
+  height: 72px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 0 20px;
+  font-size: 15px;
+  transition: all .1s ease-in-out;
+  overflow: hidden;
+}
+
+.product-price{
+  text-align: center;
+  color:#4c4c4c;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.buy_btn{
+  text-align: center;
+  border: 1px solid#999;
+  border-color: #999;
+  width: 100px;
+  margin: 0 auto;
+  border-radius: 20px;
+  transition: .3s ease-in-out;
+}
+
+.buy_btn:hover{
+  border-color:#489de0;
+  background:#489de0;
+  transition: .3s ease-in-out;
+}
+
+.buy_btn:hover .buy_btn-link{
+  color:#fff;
+}
+
+.buy_btn-link{
+  color: #999;
+  display: block;
+  margin: 10px;
+}

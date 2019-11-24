@@ -1,0 +1,68 @@
+.corp-wrapper{
+  max-width: 984px;
+  margin: 0 auto;
+}
+
+.crombs{
+  height: 44px;
+  background: #fff;
+}
+
+.corp-title{
+  padding: 0;
+  margin: 0 0 25px 15px;
+  font-size: 34px;
+  font-weight: normal;
+}
+
+.corp-content, .corp-info{
+  margin: 0 15px;
+  font-size: 14px;
+  letter-spacing: 0.35px;
+}
+
+.corp-start{
+  margin-bottom: 20px;
+}
+
+.corp-main-info{
+  text-align: right;
+}
+
+.corp-main-info p{
+  margin: 0;
+}
+
+.corp-main-info a{
+  color:#3e8fcf;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.1s ease-in-out;
+}
+
+.corp-main-info a:hover{
+  color: #333;
+}
+
+.corp-image{
+  background-image: url('https://www.svyaznoy.ru/upload/kartinki/MacBook_Family.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 948px;
+  height: 317.9px;
+  margin-bottom: 40px;
+}
+
+.corp-info-title{
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.crop-info-text{
+  margin-bottom: 40px;
+}
+
+.corp-info:last-child p{
+  margin-bottom: 40px;
+}
