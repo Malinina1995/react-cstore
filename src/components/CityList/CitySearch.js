@@ -52,7 +52,9 @@ export class CitySearch extends Component {
     });
 
     const display = {
-      display: this.props.show ? "block" : "none"
+      display: this.props.show ? "block" : "none",
+      top: this.props.isShops ? '47px' : '',
+      boxShadow: this.props.isShops ? '0 0 10px 0 rgba(0,0,0,0.1)' : ''
     };
 
     const showed = {
@@ -67,7 +69,7 @@ export class CitySearch extends Component {
     };
 
     return (
-      <div className="top-header-geolocation-city" style={display}>
+      <div className="top-header-geolocation-city" style={display}> 
         <div className="top-header-geolocation-city-header">
           <div
             className="top-header-geolocation-city-header-close"

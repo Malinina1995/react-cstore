@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { CitySearch } from '../CityList/CitySearch';
 import { Link } from "react-router-dom";
-import cities from '../../jsonFiles/cities.json';
 
 export class TopHeader extends Component {
   state = {

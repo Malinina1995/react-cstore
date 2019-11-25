@@ -38,7 +38,7 @@
 .top-header-geolocation-city-header{
   color: #333;
   font-size: 28px;
-  margin: 30px 0 4px 60px;
+  margin: 0 0 4px 60px;
 }
 
 .top-header-geolocation-city-header-title{
@@ -195,7 +195,7 @@
 }
 
 .marginBottom{
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .cityName{

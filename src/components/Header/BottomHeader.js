@@ -33,15 +33,15 @@ export class BottomHeader extends Component {
           <div className='bottom-header-menu'>
             <div className='bottom-header-menu-list'>
               <ul className='bottom-header-menu-items'>
-                <li className='bottom-header-menu-item' onMouseOver={()=>{this.changeOpasity(0)}}  onMouseOut={()=>{this.changeFocus()}}><a href='#'>iPhone</a></li>
-                <li className='bottom-header-menu-item' onMouseOver={()=>{this.changeOpasity(1)}}  onMouseOut={()=>{this.changeFocus()}}><a href='#'>iPad</a></li>
-                <li className='bottom-header-menu-item' onMouseOver={()=>{this.changeOpasity(2)}}  onMouseOut={()=>{this.changeFocus()}}><a href='#'>Mac</a></li>
-                <li className='bottom-header-menu-item' onMouseOver={()=>{this.changeOpasity(3)}}  onMouseOut={()=>{this.changeFocus()}}><a href='#'>Watch</a></li>
-                <li className='bottom-header-menu-item' onMouseOver={()=>{this.changeOpasity(4)}}  onMouseOut={()=>{this.changeFocus()}}><a href='#'>TV</a></li>
-                <li className='bottom-header-menu-item' onMouseOver={()=>{this.changeOpasity(5)}}  onMouseOut={()=>{this.changeFocus()}}><a href='#'>Beats</a></li>
-                <li className='bottom-header-menu-item' onMouseOver={()=>{this.changeOpasity(6)}}  onMouseOut={()=>{this.changeFocus()}}><a href='#'>iPod</a></li>
-                <li className='bottom-header-menu-item' onMouseOver={()=>{this.changeOpasity(7)}}  onMouseOut={()=>{this.changeFocus()}}><a href='#'>Аксессуары</a></li>
-                <li className='bottom-header-menu-item' onMouseOver={()=>{this.changeOpasity(8)}}  onMouseOut={()=>{this.changeFocus()}}><a href='#'>Акции</a></li>
+                <li className='bottom-header-menu-item' onMouseOver={()=>{this.changeOpasity(0)}}  onMouseOut={()=>{this.changeFocus()}}><a href='/'>iPhone</a></li>
+                <li className='bottom-header-menu-item' onMouseOver={()=>{this.changeOpasity(1)}}  onMouseOut={()=>{this.changeFocus()}}><a href='/'>iPad</a></li>
+                <li className='bottom-header-menu-item' onMouseOver={()=>{this.changeOpasity(2)}}  onMouseOut={()=>{this.changeFocus()}}><a href='/'>Mac</a></li>
+                <li className='bottom-header-menu-item' onMouseOver={()=>{this.changeOpasity(3)}}  onMouseOut={()=>{this.changeFocus()}}><a href='/'>Watch</a></li>
+                <li className='bottom-header-menu-item' onMouseOver={()=>{this.changeOpasity(4)}}  onMouseOut={()=>{this.changeFocus()}}><a href='/'>TV</a></li>
+                <li className='bottom-header-menu-item' onMouseOver={()=>{this.changeOpasity(5)}}  onMouseOut={()=>{this.changeFocus()}}><a href='/'>Beats</a></li>
+                <li className='bottom-header-menu-item' onMouseOver={()=>{this.changeOpasity(6)}}  onMouseOut={()=>{this.changeFocus()}}><a href='/'>iPod</a></li>
+                <li className='bottom-header-menu-item' onMouseOver={()=>{this.changeOpasity(7)}}  onMouseOut={()=>{this.changeFocus()}}><a href='/'>Аксессуары</a></li>
+                <li className='bottom-header-menu-item' onMouseOver={()=>{this.changeOpasity(8)}}  onMouseOut={()=>{this.changeFocus()}}><a href='/'>Акции</a></li>
               </ul>
             </div>
           </div>

@@ -2,13 +2,18 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import React, {Component} from 'react';
 import './corp.css';
 import corpInfo from '../../jsonFiles/corpInfo.json';
+import { Breadcrumbs } from '../Breadcrumbs/BreadCrumbs';
+
+const items = [
+  { to: '/', label: 'Главная' },
+  { label: 'Решения для бизнеса' }
+]
 
 export function Corp() {
-
   return (
     <div className='corp'>
       <div className='corp-wrapper'>
-        <div className='crombs'></div>
+        <Breadcrumbs items={items}/>
         <h1 className='corp-title'>Решения для бизнеса</h1>
         <div className='corp-content'>
           <div className='corp-start'>
