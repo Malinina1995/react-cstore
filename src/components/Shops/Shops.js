@@ -5,6 +5,7 @@ import { Breadcrumbs } from '../Breadcrumbs/BreadCrumbs';
 import { CitySearch } from '../CityList/CitySearch';
 import cities from '../../jsonFiles/cities.json';
 import { WelcomeAccordion } from '../WelcomeAccordion/WelcomeAccordion';
+import {ShopsMain} from './ShopsMain/ShopsMain';
 
 export class Shops extends Component {
   constructor() {
@@ -82,7 +83,7 @@ export class Shops extends Component {
                   isShops={this.state.isShops}
                 />}
           </div>
-          <div></div>
+          <ShopsMain/>
         </div>
         <WelcomeAccordion/>
       </div>

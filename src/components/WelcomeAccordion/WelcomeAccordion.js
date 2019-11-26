@@ -14,6 +14,10 @@ export class WelcomeAccordion extends Component {
   }
 
   render() {
+    const arrow = {
+      transform: this.state.isShowFullInfo ? 'rotate(180deg)' : 'rotate(0deg)'
+    }
+
     return (
       <div className="welcomeAccordion">
         <div className="welcomeAccordion-wrapper">
@@ -26,10 +30,14 @@ export class WelcomeAccordion extends Component {
             </p>
           </div>
           <FullInfo show={this.state.isShowFullInfo} />
-          <a className='show-more' onClick={this.toggleFullInfo}>
-            {this.state.isShowFullInfo ? "Свернуть подробную информацию" : "Подробнее про Cstore"}
-          </a>
-          <span ></span>
+          <div className='show-info'>
+            <a className='show-more' onClick={this.toggleFullInfo}>
+              {this.state.isShowFullInfo ? "Свернуть подробную информацию" : "Подробнее про Cstore"}
+            </a>
+            <span className='show-more-span' 
+              onClick={this.toggleFullInfo}
+              style={arrow}></span>
+          </div>
         </div>
       </div>
     );
