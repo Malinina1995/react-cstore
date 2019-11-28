@@ -126,24 +126,4 @@
   background: #489de0;
 }
 
-.shopMain-table-header{
-  border-bottom: solid 1px #f2f2f2;
-  display: flex;
-  color:#666;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 0 20px 20px;
-}
-
-.shopMain-table-address{
-  flex-basis: 46.7%;
-}
-
-.shopMain-table-metro{
-  flex-basis: 33%;
-}
-
-.shopMain-table-date{
-  flex-basis: 20.3%;
-}
 

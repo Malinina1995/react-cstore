@@ -57,6 +57,14 @@ export class Shops extends Component {
       { label: this.state.currentCity }
     ];
 
+    let cityInfo = {};
+    for(let i = 0; i < cities.length; i++){
+      if(cities[i].town === this.storage.getSelection()){
+        cityInfo = cities[i].shops;
+        break;
+      }
+    }
+
     return (
       <div className="shops">
         {this.state.isOpened && <div className='hiddenDiv' onClick={this.toggleCityState}></div>}
@@ -83,7 +91,7 @@ export class Shops extends Component {
                   isShops={this.state.isShops}
                 />}
           </div>
-          <ShopsMain/>
+          <ShopsMain info={cityInfo} currentCity={this.state.currentCity}/>
         </div>
         <WelcomeAccordion/>
       </div>

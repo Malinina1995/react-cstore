@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { FiltersHeader } from './FiltersHeader';
 import { FiltersMain } from './FiltersMain';
-import newProducts from '../../jsonFiles/newProducts.json';
-import popularProducts from '../../jsonFiles/popularProducts.json';
-import recommendedProducts from '../../jsonFiles/recommendedProducts.json';
+import newProducts from '../../../jsonFiles/newProducts.json';
+import popularProducts from '../../../jsonFiles/popularProducts.json';
+import recommendedProducts from '../../../jsonFiles/recommendedProducts.json';
 import './filtersStyle.css';
 
 export class Filters extends Component {

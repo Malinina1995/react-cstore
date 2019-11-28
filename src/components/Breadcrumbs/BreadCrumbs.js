@@ -15,7 +15,7 @@ export function Breadcrumbs (props){
     <div className='crombs'>
       {
         props.items.map(item => {
-          return item.hasOwnProperty('to') ? <BreadcrumbLink item={item}/> : <span className='breadcrumbs-label'>{item.label}</span>;
+          return item.hasOwnProperty('to') ? <BreadcrumbLink item={item} key={item}/> : <span className='breadcrumbs-label' key={item.label}>{item.label}</span>;
         })
       }
     </div>

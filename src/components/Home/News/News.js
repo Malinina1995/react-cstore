@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Item } from './Item';
-import item from '../../jsonFiles/news.json';
+import item from '../../../jsonFiles/news.json';
 import './newsStyle.css';
 
 export class News extends Component {
