@@ -4,22 +4,37 @@ import "./ShopsMainTable.css";
 export class ShopsMainTable extends Component {
   state = {
     info: [],
-    currentCity:''
-  }
+    currentCity: ""
+  };
 
-  showFullInformation = () => {};
+  showFullInformation = i => {
+    this.setState({
+      info: this.state.info.map((item, index) => {
+        return i === index ? { ...item, open: true } : { ...item, open: false };
+      })
+    });
+  };
 
   componentDidUpdate = () => {
-    if(this.props.currentCity !== this.state.currentCity)
+    if (this.props.currentCity !== this.state.currentCity)
+      this.setState({
+        info: this.props.info.map(i => {
+          return { ...i, open: false };
+        }),
+        currentCity: this.props.currentCity
+      });
+  };
+
+  componentDidMount = ()=>{
     this.setState({
-      info: this.props.info.map((i)=>{
-        return {...i, open:false}
+      info: this.props.info.map(i => {
+        return { ...i, open: false };
       }),
-      currentCity: this.props.currentCity
-    })
+    });
   }
 
   render() {
+
     return (
       <div className="shopMain-table">
         <div className="shopMain-table-header">
@@ -28,13 +43,15 @@ export class ShopsMainTable extends Component {
           <div className="shopMain-table-date">Режим работы</div>
         </div>
         <div className="shopMain-table-info">
-          {this.state.info.map((item,index) => {
+          {this.state.info.map((item, index) => {
             return (
               <div className="shopMain-table-info-main">
                 <div
-                  className="shopMain-table-info-item"
+                  className={item.open ? 'shopMain-table-info-item-hover' : 'shopMain-table-info-item'}
                   key={item.address}
-                  onClick={()=>{this.showFullInformation(index)}}
+                  onClick={() => {
+                    this.showFullInformation(index);
+                  }}
                 >
                   <div className="shopMain-table-info-item-address">
                     {item.address}
@@ -64,13 +81,23 @@ export class ShopsMainTable extends Component {
                   </div>
                 </div>
                 <div className="shopMain-table-info-item-fullInfo">
-                  <div
-                    className="shopMain-table-info-item-fullInfo-address"
-                    style={{ display: "none" }}
-                  >
-                    <span>Как добраться</span>
-                    <p>{item.road}</p>
-                  </div>
+                  {item.open && (
+                    <div className="shopMain-table-info-item-fullInfo-block">
+                      <div className="shopMain-table-info-item-fullInfo-address">
+                        <span>Как добраться</span>
+                        <p>{item.road}</p>
+                      </div>
+                      <div className="shopMain-table-info-item-fullInfo-map-links">
+                        <div onClick={this.props.changeActiveMap}
+                          className="shopMain-table-info-item-fullInfo-map-links-change">
+                          Показать на карте
+                        </div>
+                        <div className="shopMain-table-info-item-fullInfo-map-link">
+                          <a href={item.link} target='_blank'>Построить маршрут <br/>на Яндекс картах</a>
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             );

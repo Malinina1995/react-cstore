@@ -58,9 +58,11 @@ export class Shops extends Component {
     ];
 
     let cityInfo = {};
+    let map = '';
     for(let i = 0; i < cities.length; i++){
       if(cities[i].town === this.storage.getSelection()){
         cityInfo = cities[i].shops;
+        map = cities[i].map;
         break;
       }
     }
@@ -91,7 +93,7 @@ export class Shops extends Component {
                   isShops={this.state.isShops}
                 />}
           </div>
-          <ShopsMain info={cityInfo} currentCity={this.state.currentCity}/>
+          <ShopsMain info={cityInfo} map={map} currentCity={this.state.currentCity}/>
         </div>
         <WelcomeAccordion/>
       </div>

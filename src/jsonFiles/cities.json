@@ -2,6 +2,7 @@
   {
     "id": "133",
     "town": "Москва",
+    "map":"https://yandex.ru/map-widget/v1/-/CGduy8L2",
     "shops": [
       {
         "address": "Москва г, Тверская ул 6, стр 1",
@@ -11,6 +12,7 @@
             "color":"#2dbe2c"
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~55.760242%2C37.611347",
         "period": "Пн-Вс (10:00-23:00)",
         "road": "Выход из станций метро «Тверская» или «Пушкинская» на улицу Тверская. Далее нужно пройти вниз по улице в сторону Кремля около 500 метров. Магазин Cstore находится напротив здания Министерства культуры и образования, рядом с Тверской площадью."
       },
@@ -22,6 +24,7 @@
             "color":"#800080"
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~55.850407%2C37.444092",
         "period": "Пн-Вс (10:00-22:00)",
         "road": "Станция метро «Сходненская», выход к ТЦ «Калейдоскоп». Далее нужно зайти в ТЦ через главный вход и дойти до магазина Cstore."
       },
@@ -45,6 +48,7 @@
             "color":"#FFC0CB"
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~55.710758%2C37.675872",
         "period": "Пн-Вс (10:00-22:00)",
         "road": "Магазин Сstore находится в ТРЦ «Мозаика» справа от главного входа. Дойти до ТРЦ можно от станции МЦК «Дубровка» по наземному переходу. От станции метро «Кожуховская», «Автозаводская» и «Дубровка» ходят бесплатные автобусы."
       }
@@ -53,6 +57,7 @@
   {
     "id": "216",
     "town": "Архангельск",
+    "map":"https://yandex.ru/map-widget/v1/?um=constructor%3A687ce715ff8e564c0858edd28143ada64690c9f38959390f3be1db27778c7018&amp;source=constructor",
     "shops": [
       {
         "address": "Архангельск г, Воскресенская ул 20",
@@ -62,6 +67,7 @@
             "color":""
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~64.542030%2C40.535011",
         "period": "Пн-Вс (10:00-21:00)",
         "road": "Магазин Cstore расположен в ТРК «Титан Арена». Вход со стороны Воскресенской улицы. После стойки ресепшен – третий отдел справа."
       }
@@ -70,6 +76,7 @@
   {
     "id": "71",
     "town": "Волгоград",
+    "map":"https://yandex.ru/map-widget/v1/?um=constructor%3A708d64868e65b65af01885e79ef527da07af8c83d8781990fee2219e19453292&amp;source=constructor",
     "shops": [
       {
         "address": "Волгоград г, Рабоче-Крестьянская ул 9 Б",
@@ -79,6 +86,7 @@
             "color":""
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~48.697041%2C44.501999",
         "period": "Пн-Вс (10:00-22:00)",
         "road": "Магазин Cstore расположен на первом этаже в ТЦ «Ворошиловский», слева от главного входа, напротив эскалатора."
       }
@@ -87,6 +95,7 @@
   {
     "id": "74",
     "town": "Воронеж",
+    "map":"https://yandex.ru/map-widget/v1/?um=constructor%3A4eb0059246bdc242486fc78366ac2f54d16a7b9ff2453e7f6fe0fb25b292b17f&amp;source=constructor",
     "shops": [
       {
         "address": "Воронеж г, Победы б-р 23",
@@ -96,6 +105,7 @@
             "color":""
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~51.710869%2C39.159637",
         "period": "Пн-Вс (10:00-22:00)",
         "road": "Магазин Cstore расположен на первом этаже в ТЦ «Арена»."
       }
@@ -104,6 +114,7 @@
   {
     "id": "90",
     "town": "Екатеринбург",
+    "map":"https://yandex.ru/map-widget/v1/?um=constructor%3Adec918db6e8f247d2cdb0a3947746405dcc8a19e1e806ebe2fd0077352420ad4&amp;source=constructor",
     "shops": [
       {
         "address": "Екатеринбург г, Ленина пр-кт 40",
@@ -117,6 +128,7 @@
             "color":"#999"
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~56.838758%2C60.612005",
         "period": "Пн-Вс (10:00-22:00)",
         "road": "Станция метро «Площадь 1905 года». Магазин Cstore расположен рядом с рестораном «Бургер-Кинг»."
       },
@@ -128,6 +140,7 @@
             "color":""
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~56.862858%2C60.631683",
         "period": "Пн-Вс (10:00-22:00)",
         "road": "Магазин Cstore расположен в ТЦ «Парк Хаус», рядом с главным входом."
       }
@@ -136,6 +149,7 @@
   {
     "id": "678",
     "town": "Зеленоград",
+    "map":"https://yandex.ru/map-widget/v1/?um=constructor%3Affab6d23983cb625ee1a78da7c8e3cda37c6fd4e3281c4ffda56190dccccfa15&amp;source=constructor",
     "shops": [
       {
         "address": "Зеленоград г, Крюковская пл 1",
@@ -145,6 +159,7 @@
             "color":""
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~55.982677%2C37.174812",
         "period": "Пн-Вс (10:00-22:00)",
         "road": "Магазин Сstore расположен рядом с автобусной остановкой «Станция Крюкова», на первом этаже в ТЦ «Иридиум» (вход рядом с парковкой)."
       }
@@ -153,6 +168,7 @@
   {
     "id": "29",
     "town": "Иркутск",
+    "map":"https://yandex.ru/map-widget/v1/?um=constructor%3Ae54e2c16bbddb49bdb323a77f82277d50cf33d5e4b2ba1f0a6fbe5c3879e87f3&amp;source=constructor",
     "shops": [
       {
         "address": "Иркутск г, Верхняя Набережная ул 10",
@@ -162,6 +178,7 @@
             "color":""
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~52.267654%2C104.289139",
         "period": "Пн-Вс (10:00-22:00)",
         "road": "Магазин Cstore расположен на первом этаже в ТЦ «КомсоМолл»."
       }
@@ -170,6 +187,7 @@
   {
     "id": "102",
     "town": "Казань",
+    "map":"https://yandex.ru/map-widget/v1/?um=constructor%3A9a53980f9d4cfe897650c559534636536d03eb9a710fd4a8d533e85dfc3e7ec6&amp;source=constructor",
     "shops": [
       {
         "address": "Казань г, Победы пр-кт 91",
@@ -180,6 +198,7 @@
           }
           
         ],
+        "link":"http://maps.yandex.ru/?rtext=~55.768356%2C49.217175",
         "period": "Пн-Вс (10:00-22:00)",
         "road": "Магазин Cstore расположен на первом этаже в ТЦ «Южный», справа от главного входа."
       },
@@ -191,6 +210,7 @@
             "color":"#999"
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~55.829804%2C49.118617",
         "period": "Пн-Вс (09:00-22:00)",
         "road": "Магазин Cstore расположен в ТЦ «Парк Хаус», рядом с супермаркетом «Ашан»."
       },
@@ -206,6 +226,7 @@
             "color":"#999"
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~55.821255%2C49.093288",
         "period": "Пн-Вс (10:00-22:00)",
         "road": "Магазин Cstore расположен на первом этаже в ТЦ «Тандем», справа от главного входа."
       }
@@ -214,6 +235,7 @@
   {
     "id": "104",
     "town": "Калуга",
+    "map":"https://yandex.ru/map-widget/v1/?um=constructor%3Ae6293a03dcf944b4f708e1ee8ab7488d2208e7e3828beeb97059e1a1e9890be4&amp;source=constructor",
     "shops": [
       {
         "address": "Калуга г, Московская ул 338а",
@@ -223,6 +245,7 @@
             "color":""
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~54.586666%2C36.247955",
         "period": "Пн-Вс (10:00-22:00)",
         "road": "Магазин Cstore расположен в ТЦ «Торговый Квартал»."
       }
@@ -231,6 +254,7 @@
   {
     "id": "120",
     "town": "Краснодар",
+    "map":"https://yandex.ru/map-widget/v1/?um=constructor%3Acb2d8eb8f59b56e4530eadb5200f18ddcfbae6f21d90c5e87dd14c2bf772cbfb&amp;source=constructor",
     "shops": [
       {
         "address": "Краснодар г, Стасова/Сормовская ул 178-180/1",
@@ -240,6 +264,7 @@
             "color":""
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~45.029900%2C39.045898",
         "period": "Пн-Вс (10:00-22:00)",
         "road": "Магазин Cstore расположен в ТЦ «Галактика» напротив зоны с кафе и сцены для проведения мероприятий."
       }
@@ -248,6 +273,7 @@
   {
     "id": "136",
     "town": "Мытищи",
+    "map":"https://yandex.ru/map-widget/v1/?um=constructor%3A84048984890acd886023d4fb2c56d57768d466be7c5c3fe01b07782c5684d792&amp;source=constructor",
     "shops": [
       {
         "address": "Мытищи г, вблизи п. Вешки пом 1-060",
@@ -257,6 +283,7 @@
             "color":""
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~55.912930%2C37.586079",
         "period": "Пн-Вс (10:00-22:00)",
         "road": "Станция метро «Алтуфьево», первый вагон из центра. Далее необходимо сесть в маршрутное такси (№ 1018, 1005, 1004) и доехать до ТЦ «Весна». Магазин Cstore расположен на первом этаже в ТЦ «Весна», рядом с супермаркетом «Окей». "
       },
@@ -268,6 +295,7 @@
             "color":""
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~55.916809%2C37.758369",
         "period": "Пн-Чт (10:00-22:00), Пт-Сб (10:00-23:00), Вс (10:00-22:00)",
         "road": "Магазин Сstore расположен в ТРЦ «Красный Кит» напротив ж/д вокзала города Мытищи."
       }
@@ -276,6 +304,7 @@
   {
     "id": "137",
     "town": "Набережные Челны",
+    "map":"https://yandex.ru/map-widget/v1/?um=constructor%3A7c9c5f6e25f54994ccbd6cc50707390c6d138dba91bcdaa7e9fbe46b70c3234f&amp;source=constructor",
     "shops": [
       {
         "address": "Набережные Челны г, Сююмбике пр-кт 2/19",
@@ -285,6 +314,7 @@
             "color":""
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~55.730721%2C52.392399",
         "period": "Пн-Вс (09:00-21:00)",
         "road": "Магазин Cstore расположен около центрального входа в ТЦ, под эскалатором, рядом с кафе «Бинхартс кофе»."
       }
@@ -293,6 +323,7 @@
   {
     "id": "140",
     "town": "Нижний Новгород",
+    "map":"https://yandex.ru/map-widget/v1/?um=constructor%3A0864e0f23b67a7b1869dee59dcdba0a0f9819a9395bc7f9c6c722a3fd7942088&amp;source=constructor",
     "shops": [
       {
         "address": "Нижний Новгород г, Алексеевская ул, помещение П1 10/16",
@@ -303,6 +334,7 @@
           }
           
         ],
+        "link":"http://maps.yandex.ru/?rtext=~56.322582%2C44.006264",
         "period": "Пн-Вс (10:00-21:00)",
         "road": "Магазин Cstore расположен в ТЦ «Лобачевский Плаза», вход со стороны Октябрьской улицы."
       }
@@ -311,6 +343,7 @@
   {
     "id": "1100",
     "town": "Новая Адыгея",
+    "map":"https://yandex.ru/map-widget/v1/?um=constructor%3Af99b6975340ba8770fcb52e63c81b9763f7689442a7763cd661801b164918cea&amp;source=constructor",
     "shops": [
       {
         "address": "Новая Адыгея аул, Тургеневское шоссе ул 27",
@@ -320,6 +353,7 @@
             "color":""
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~45.012227%2C38.928894",
         "period": "Пн-Вс (10:00-22:00)",
         "road": "Магазин Cstore расположен в ТЦ «Мега» (третий вход). Далее необходимо подняться вверх по лестнице, рядом будут магазины «Леруа Мерлен» и «Спортмастер»."
       }
@@ -328,6 +362,7 @@
   {
     "id": "143",
     "town": "Новосибирск",
+    "map":"https://yandex.ru/map-widget/v1/?um=constructor%3A4d3c9496fd59b3ce2af7fbaeb302693d063df37ecaeffa16851c57f3063d24e6&amp;source=constructor",
     "shops": [
       {
         "address": "Новосибирск г, Фрунзе ул 238",
@@ -341,6 +376,7 @@
             "color":"#008000"
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~55.038940%2C82.960524",
         "period": "Пн-Вс (10:00-22:00)",
         "road": "Магазин Cstore расположен на первом этаже в ТЦ «Сибирский Молл»."
       },
@@ -360,6 +396,7 @@
             "color":"#800"
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~54.963510%2C82.935968",
         "period": "Пн-Вс (10:00-22:00)",
         "road": "Магазин Cstore расположен в ТЦ «Мега», справа от главного входа."
       }
@@ -368,6 +405,7 @@
   {
     "id": "654",
     "town": "Новый Уренгой",
+    "map":"https://yandex.ru/map-widget/v1/?um=constructor%3Aa5b932979469ea05f115c51251d5f92513c5955f0d2cdea66c0bd7412d19b211&amp;source=constructor",
     "shops": [
       {
         "address": "Новый Уренгой г, Квартал 01:09:01 (Донской) б/н",
@@ -377,6 +415,7 @@
             "color":""
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~66.082599%2C76.630816",
         "period": "Пн-Вс (10:00-22:00)",
         "road": "Магазин Cstore расположен на первом этаже в ТЦ «Солнечный», слева от главного входа."
       }
@@ -385,6 +424,7 @@
   {
     "id": "159",
     "town": "Петрозаводск",
+    "map":"https://yandex.ru/map-widget/v1/?um=constructor%3A08c114924f68d306e3879c3ad3000084e8ab63f68a06d2cebc37a65dfef774d4&amp;source=constructor",
     "shops": [
       {
         "address": "Петрозаводск г, Лесной пр-кт 47А",
@@ -394,6 +434,7 @@
             "color":""
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~61.775036%2C34.307560",
         "period": "Пн-Вс (10:00-20:00)",
         "road": "Магазин Cstore находится в ТЦ «Лотос Плаза»."
       }
@@ -402,6 +443,7 @@
   {
     "id": "170",
     "town": "Самара",
+    "map":"https://yandex.ru/map-widget/v1/?um=constructor%3A2a32913e89a88b73023ba33cf0c1edf87bbfddbeb15cc8d5965f7c62e8b2b017&amp;source=constructor",
     "shops": [
       {
         "address": "Самара г, Южное ш 5",
@@ -411,6 +453,7 @@
             "color":""
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~53.140190%2C50.173569",
         "period": "Пн-Вс (10:00-22:00)",
         "road": "Магазин Cstore расположен в ТЦ «Амбар», рядом с магазинами H&M и Pandora."
       }
@@ -419,6 +462,7 @@
   {
     "id": "184",
     "town": "Тамбов",
+    "map":"https://yandex.ru/map-widget/v1/?um=constructor%3Af94b07cf969e2e29acc97e027b48d95c1a4fd8f898ca4ff697facb22e598e6ae&amp;source=constructor",
     "shops": [
       {
         "address": "Тамбов г, Советская ул 99а",
@@ -428,6 +472,7 @@
             "color":""
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~52.724197%2C41.457188",
         "period": "Пн-Вс (10:00-22:00)",
         "road": "Магазин Cstore расположен рядом с автобусной остановкой «Парк культуры», в ТЦ Рио»."
       }
@@ -436,6 +481,7 @@
   {
     "id": "186",
     "town": "Тольятти",
+    "map":"https://yandex.ru/map-widget/v1/?um=constructor%3Ac7050a213d86fae80ef9794217e929d523f2cc117308cf0b9f0dde4071a8a8bc&amp;source=constructor",
     "shops": [
       {
         "address": "Тольятти г, Автозаводское ш 6",
@@ -445,6 +491,7 @@
             "color":""
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~53.541801%2C49.390606",
         "period": "Пн-Вс (10:00-22:00)",
         "road": "Магазин Cstore расположен в ТЦ «Парк Хаус», слева от эскалатора."
       }
@@ -453,6 +500,7 @@
   {
     "id": "191",
     "town": "Уфа",
+    "map":"https://yandex.ru/map-widget/v1/?um=constructor%3Ab706175be96ec7f21d59af18139d3d6b69b80dc888ba13d0cc00137533c57333&amp;source=constructor",
     "shops": [
       {
         "address": "Уфа г, Цюрупы ул 97",
@@ -462,6 +510,7 @@
             "color":""
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~54.737022%2C55.957809",
         "period": "Пн-Вс (10:00-22:00)",
         "road": "Магазин Cstore расположен в ТЦ «Центральный», вход со стороны улицы Цюрупы. Далее необходимо повернуть направо и дойти до эскалаторов."
       }
@@ -470,6 +519,7 @@
   {
     "id": "519",
     "town": "Федяково",
+    "map":"https://yandex.ru/map-widget/v1/?um=constructor%3A963df926a0228175402b6fe292ae43c6eef5ff725511f423bea669ff7c217500&amp;source=constructor",
     "shops": [
       {
         "address": "Федяково с, Мега Любимая ст1",
@@ -479,6 +529,7 @@
             "color":""
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~56.225457%2C44.069527",
         "period": "Пн-Вс (10:00-22:00)",
         "road": "Магазин Cstore находится рядом с центральным проходом в гипермаркет Ашан, справа от эскалатора."
       }
@@ -487,6 +538,7 @@
   {
     "id": "201",
     "town": "Ярославль",
+    "map":"https://yandex.ru/map-widget/v1/?um=constructor%3A250ca50759b409f0b6615d5b9ca42f218b384a63aa7b35e7ec3dec9d99de4f82&amp;source=constructor",
     "shops": [
       {
         "address": "Ярославль г, Победы ул 41",
@@ -496,6 +548,7 @@
             "color":""
           }
         ],
+        "link":"http://maps.yandex.ru/?rtext=~57.626873%2C39.869236",
         "period": "Пн-Вс (10:00-22:00)",
         "road": "Магазин Cstore расположен на перекрестке улиц Свободы и Победы, рядом со стадионом «Шинник»."
       }

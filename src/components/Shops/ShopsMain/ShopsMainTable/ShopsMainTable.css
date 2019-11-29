@@ -7,11 +7,11 @@
   padding: 0 20px 20px;
 }
 
-.shopMain-table-address, .shopMain-table-info-item-address{
+.shopMain-table-address, .shopMain-table-info-item-address, .shopMain-table-info-item-fullInfo-address{
   flex-basis: 46.7%;
 }
 
-.shopMain-table-metro, .shopMain-table-info-item-metro{
+.shopMain-table-metro, .shopMain-table-info-item-metro, shopMain-table-info-item-fullInfo-map-links{
   flex-basis: 33%;
 }
 
@@ -29,12 +29,15 @@
   border-bottom: solid 1px #f2f2f2;
 }
 
-.shopMain-table-info-item{
+.shopMain-table-info-item, .shopMain-table-info-item-hover{
   cursor: pointer;
   padding: 22px 20px;
   display: flex;
   transition: .3s;
+}
 
+.shopMain-table-info-item-hover{
+  cursor: default;
 }
 
 .shopMain-table-info-item:hover{
@@ -63,13 +66,22 @@
 
 }
 
-.shopMain-table-info-item-fullInfo{
+.shopMain-table-info-item-fullInfo-block{
   display: flex;
-  margin-left: 20px;
+  padding: 0 20px 30px;
+}
+
+.shopMain-table-info-item-fullInfo{
+  width: 100%;
+}
+
+.shopMain-table-info-item-fullInfo-map-links{
+  flex-basis: 33%;
 }
 
 .shopMain-table-info-item-fullInfo-address{
   flex-basis: 46.7%;
+  padding-right: 30px;
 }
 
 .shopMain-table-info-item-fullInfo-address span {
@@ -80,4 +92,76 @@
 .shopMain-table-info-item-fullInfo-address p {
   margin-bottom: 30px;
   font-size: 13px;
+}
+
+.shopMain-table-info-item-fullInfo-map-links-change,
+.shopMain-table-info-item-fullInfo-map-link{
+  position: relative;
+  padding-left: 28px;
+  color: #3e8fcf;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.shopMain-table-info-item-fullInfo-map-link a{
+  color: #3e8fcf;
+  transition: .3s;
+}
+
+.shopMain-table-info-item-fullInfo-map-link a:hover{
+  color: #333;
+}
+
+.shopMain-table-info-item-fullInfo-map-links-change:hover,
+.shopMain-table-info-item-fullInfo-map-link:hover{
+  color: #333;
+}
+
+.shopMain-table-info-item-fullInfo-map-links-change::after{
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%09%20%20%20viewBox%3D%220%200%2025.165%2030%22%20enable-background%3D%22new%200%200%2025.165%2030%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%233e8fcf%22%20d%3D%22M12.583%2C30c-0.149%2C0-0.298-0.053-0.418-0.154C11.668%2C29.422%2C0%2C19.395%2C0%2C12.582C0%2C5.644%2C5.644%2C0%2C12.583%2C0%09c6.938%2C0%2C12.582%2C5.644%2C12.582%2C12.582c0%2C6.814-11.667%2C16.839-12.164%2C17.264C12.881%2C29.947%2C12.732%2C30%2C12.583%2C30%20M12.583%2C1.291%09c-6.226%2C0-11.292%2C5.064-11.292%2C11.291c0%2C5.544%2C9.2%2C14.053%2C11.292%2C15.915c2.091-1.861%2C11.291-10.372%2C11.291-15.915%09C23.874%2C6.354%2C18.809%2C1.291%2C12.583%2C1.291%22%2F%3E%3Cpath%20fill%3D%22%233e8fcf%22%20d%3D%22M12.583%2C18.387c-3.202%2C0-5.806-2.604-5.806-5.806c0-3.202%2C2.604-5.807%2C5.806-5.807%09c3.202%2C0%2C5.807%2C2.605%2C5.807%2C5.807C18.39%2C15.783%2C15.785%2C18.387%2C12.583%2C18.387%20M12.583%2C8.064c-2.49%2C0-4.515%2C2.026-4.515%2C4.516%09c0%2C2.49%2C2.025%2C4.516%2C4.515%2C4.516c2.49%2C0%2C4.516-2.026%2C4.516-4.516C17.099%2C10.091%2C15.073%2C8.064%2C12.583%2C8.064%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+    background-position: center;
+    width: 16px;
+    height: 19.0741px;
+}
+
+.shopMain-table-info-item-fullInfo-map-link::after{
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%09%20%20%20viewBox%3D%220%200%2020%2020%22%20enable-background%3D%22new%200%200%2020%2020%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%3E%09%3Cg%3E%09%09%3Cpath%20fill%3D%22%235f8dcb%22%20d%3D%22M2.717%2C1.143c-0.624%2C0-1.131%2C0.512-1.131%2C1.142c0%2C0.63%2C0.507%2C1.143%2C1.131%2C1.143s1.131-0.513%2C1.131-1.143%09%09%09C3.848%2C1.655%2C3.341%2C1.143%2C2.717%2C1.143%20M2.717%2C4.571c-1.247%2C0-2.262-1.025-2.262-2.286C0.455%2C1.025%2C1.47%2C0%2C2.717%2C0%09%09%09s2.262%2C1.025%2C2.262%2C2.286C4.979%2C3.546%2C3.964%2C4.571%2C2.717%2C4.571%22%2F%3E%09%09%3Cpath%20fill%3D%22%235f8dcb%22%20d%3D%22M16.659%2C16.571c-0.623%2C0-1.131%2C0.513-1.131%2C1.143c0%2C0.63%2C0.507%2C1.142%2C1.131%2C1.142%09%09%09c0.624%2C0%2C1.131-0.512%2C1.131-1.142C17.79%2C17.084%2C17.283%2C16.571%2C16.659%2C16.571%20M16.659%2C20c-1.247%2C0-2.262-1.025-2.262-2.286%09%09%09c0-1.26%2C1.015-2.286%2C2.262-2.286c1.248%2C0%2C2.263%2C1.025%2C2.263%2C2.286C18.921%2C18.975%2C17.907%2C20%2C16.659%2C20%22%2F%3E%09%09%3Cpath%20fill%3D%22%235f8dcb%22%20d%3D%22M16.018%2C2H6.971C6.659%2C2%2C6.406%2C2.113%2C6.406%2C2.428C6.406%2C2.744%2C6.659%2C3%2C6.971%2C3h9.045%09%09%09c1.56%2C0%2C2.988%2C1.424%2C2.988%2C3v1c0%2C1.576-1.428%2C3-2.988%2C3h-3.983H8.05H3.983C1.802%2C10%2C0%2C11.794%2C0%2C14v1c0%2C2.206%2C1.884%2C4%2C4.066%2C4%09%09%09h7.884c0.313%2C0%2C0.996-0.113%2C0.996-0.429c0-0.315-0.253-0.571-0.565-0.571H3.983c-1.558%2C0-2.987-1.424-2.987-3v-1%09%09%09c0-1.576%2C1.429-3%2C2.987-3H8.05h3.983h3.983C18.2%2C11%2C20%2C9.206%2C20%2C7V6C20%2C3.794%2C18.201%2C2%2C16.018%2C2%22%2F%3E%09%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+}
+
+.shopMain-table-info-item-fullInfo-map-links-change:hover::after{
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+      background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%09%20%20%20viewBox%3D%220%200%2025.165%2030%22%20enable-background%3D%22new%200%200%2025.165%2030%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%23333333%22%20d%3D%22M12.583%2C30c-0.149%2C0-0.298-0.053-0.418-0.154C11.668%2C29.422%2C0%2C19.395%2C0%2C12.582C0%2C5.644%2C5.644%2C0%2C12.583%2C0%09c6.938%2C0%2C12.582%2C5.644%2C12.582%2C12.582c0%2C6.814-11.667%2C16.839-12.164%2C17.264C12.881%2C29.947%2C12.732%2C30%2C12.583%2C30%20M12.583%2C1.291%09c-6.226%2C0-11.292%2C5.064-11.292%2C11.291c0%2C5.544%2C9.2%2C14.053%2C11.292%2C15.915c2.091-1.861%2C11.291-10.372%2C11.291-15.915%09C23.874%2C6.354%2C18.809%2C1.291%2C12.583%2C1.291%22%2F%3E%3Cpath%20fill%3D%22%23333333%22%20d%3D%22M12.583%2C18.387c-3.202%2C0-5.806-2.604-5.806-5.806c0-3.202%2C2.604-5.807%2C5.806-5.807%09c3.202%2C0%2C5.807%2C2.605%2C5.807%2C5.807C18.39%2C15.783%2C15.785%2C18.387%2C12.583%2C18.387%20M12.583%2C8.064c-2.49%2C0-4.515%2C2.026-4.515%2C4.516%09c0%2C2.49%2C2.025%2C4.516%2C4.515%2C4.516c2.49%2C0%2C4.516-2.026%2C4.516-4.516C17.099%2C10.091%2C15.073%2C8.064%2C12.583%2C8.064%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+    background-position: center;
+    width: 16px;
+    height: 19.0741px;
+}
+
+.shopMain-table-info-item-fullInfo-map-link:hover::after{
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%09%20%20%20viewBox%3D%220%200%2020%2020%22%20enable-background%3D%22new%200%200%2020%2020%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%3E%09%3Cg%3E%09%09%3Cpath%20fill%3D%22%23333333%22%20d%3D%22M2.717%2C1.143c-0.624%2C0-1.131%2C0.512-1.131%2C1.142c0%2C0.63%2C0.507%2C1.143%2C1.131%2C1.143s1.131-0.513%2C1.131-1.143%09%09%09C3.848%2C1.655%2C3.341%2C1.143%2C2.717%2C1.143%20M2.717%2C4.571c-1.247%2C0-2.262-1.025-2.262-2.286C0.455%2C1.025%2C1.47%2C0%2C2.717%2C0%09%09%09s2.262%2C1.025%2C2.262%2C2.286C4.979%2C3.546%2C3.964%2C4.571%2C2.717%2C4.571%22%2F%3E%09%09%3Cpath%20fill%3D%22%23333333%22%20d%3D%22M16.659%2C16.571c-0.623%2C0-1.131%2C0.513-1.131%2C1.143c0%2C0.63%2C0.507%2C1.142%2C1.131%2C1.142%09%09%09c0.624%2C0%2C1.131-0.512%2C1.131-1.142C17.79%2C17.084%2C17.283%2C16.571%2C16.659%2C16.571%20M16.659%2C20c-1.247%2C0-2.262-1.025-2.262-2.286%09%09%09c0-1.26%2C1.015-2.286%2C2.262-2.286c1.248%2C0%2C2.263%2C1.025%2C2.263%2C2.286C18.921%2C18.975%2C17.907%2C20%2C16.659%2C20%22%2F%3E%09%09%3Cpath%20fill%3D%22%23333333%22%20d%3D%22M16.018%2C2H6.971C6.659%2C2%2C6.406%2C2.113%2C6.406%2C2.428C6.406%2C2.744%2C6.659%2C3%2C6.971%2C3h9.045%09%09%09c1.56%2C0%2C2.988%2C1.424%2C2.988%2C3v1c0%2C1.576-1.428%2C3-2.988%2C3h-3.983H8.05H3.983C1.802%2C10%2C0%2C11.794%2C0%2C14v1c0%2C2.206%2C1.884%2C4%2C4.066%2C4%09%09%09h7.884c0.313%2C0%2C0.996-0.113%2C0.996-0.429c0-0.315-0.253-0.571-0.565-0.571H3.983c-1.558%2C0-2.987-1.424-2.987-3v-1%09%09%09c0-1.576%2C1.429-3%2C2.987-3H8.05h3.983h3.983C18.2%2C11%2C20%2C9.206%2C20%2C7V6C20%2C3.794%2C18.201%2C2%2C16.018%2C2%22%2F%3E%09%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
 }
