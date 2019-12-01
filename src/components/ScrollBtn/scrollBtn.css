@@ -1,0 +1,59 @@
+.scrollBtn{
+  position: fixed;
+  height: 60px;
+  right: 30px;
+  width: 60px;
+  bottom: 30px;
+  z-index: 1999;
+  transition: opacity 0.2s ease;
+  opacity: .3;
+  cursor: pointer;
+}
+
+.scrollBtn::before{
+  background: #fff;
+    border: solid 1px #999;
+    border-radius: 50%;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.2s ease;
+}
+
+.scrollBtn::after, .scrollBtn-active::after{
+  content: '';
+  position: absolute;
+  display: block;
+  left: calc(50% - 13px);
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%09%20%20%20viewBox%3D%220%200%2025%2013%22%20enable-background%3D%22new%200%200%2025%2013%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%3E%09%3Cpolygon%20fill%3D%22%239999999%22%20points%3D%2223.582%2C13%2012.5%2C2.563%201.42%2C13%200%2C11.774%2012.5%2C0%2025%2C11.774%20%09%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat no-repeat;
+  background-position: center;
+  width: 26px;
+  height: 13.52px;
+  top: 22px;
+}
+
+.scrollBtn-active{
+  opacity: 1;
+}
+
+.scrollBtn-active::before{
+  background: #333;
+  border: solid 1px #333;
+}
+
+.scrollBtn-active::after, .scrollBtn:hover::after{
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%09%20%20%20viewBox%3D%220%200%2025%2013%22%20enable-background%3D%22new%200%200%2025%2013%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%3E%09%3Cpolygon%20fill%3D%22%23ffffff%22%20points%3D%2223.582%2C13%2012.5%2C2.563%201.42%2C13%200%2C11.774%2012.5%2C0%2025%2C11.774%20%09%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat;
+}
+
+.scrollBtn:hover{
+  opacity: 1;
+}
+
+.scrollBtn:hover::before, .scrollBtn-active:hover::before{
+  background: #3e8fcf;
+  border: solid 1px #3e8fcf;
+  
+}
