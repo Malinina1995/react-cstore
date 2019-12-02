@@ -1,0 +1,23 @@
+
+.shopMain-block-nothing{
+  background-color:#fff;
+  border: solid 1px #e0e0e0;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  z-index: 1;
+  padding: 40px 20px 20px;
+}
+
+.shopMain-block-nothing-arr{
+  color: #999;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.shopMain-block-nothing-arr:hover{
+  color: #3e8fcf;
+}

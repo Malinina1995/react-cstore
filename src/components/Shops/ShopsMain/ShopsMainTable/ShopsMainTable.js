@@ -16,7 +16,9 @@ export class ShopsMainTable extends Component {
   };
 
   componentDidUpdate = () => {
-    if (this.props.currentCity !== this.state.currentCity)
+    const citiesEq = this.props.currentCity !== this.state.currentCity;
+    const countsEq = this.props.info.length !== this.state.info.length;
+    if (citiesEq || countsEq)
       this.setState({
         info: this.props.info.map(i => {
           return { ...i, open: false };
@@ -34,7 +36,6 @@ export class ShopsMainTable extends Component {
   }
 
   render() {
-
     return (
       <div className="shopMain-table">
         <div className="shopMain-table-header">
@@ -45,7 +46,7 @@ export class ShopsMainTable extends Component {
         <div className="shopMain-table-info">
           {this.state.info.map((item, index) => {
             return (
-              <div className="shopMain-table-info-main">
+              <div key={item.id} className="shopMain-table-info-main">
                 <div
                   className={item.open ? 'shopMain-table-info-item-hover' : 'shopMain-table-info-item'}
                   key={item.address}
