@@ -18,22 +18,24 @@ export class ShopsMainTable extends Component {
   componentDidUpdate = () => {
     const citiesEq = this.props.currentCity !== this.state.currentCity;
     const countsEq = this.props.info.length !== this.state.info.length;
-    if (citiesEq || countsEq)
+
+    if (citiesEq || countsEq) {
       this.setState({
         info: this.props.info.map(i => {
           return { ...i, open: false };
         }),
         currentCity: this.props.currentCity
       });
+    }
   };
 
-  componentDidMount = ()=>{
+  componentDidMount = () => {
     this.setState({
       info: this.props.info.map(i => {
         return { ...i, open: false };
-      }),
+      })
     });
-  }
+  };
 
   render() {
     return (
@@ -46,15 +48,25 @@ export class ShopsMainTable extends Component {
         <div className="shopMain-table-info">
           {this.state.info.map((item, index) => {
             return (
-              <div key={item.id} className="shopMain-table-info-main">
+              <div
+                className="shopMain-table-info-main"
+                key={item.id * 5 + item.address}
+              >
                 <div
-                  className={item.open ? 'shopMain-table-info-item-hover' : 'shopMain-table-info-item'}
+                  className={
+                    item.open
+                      ? "shopMain-table-info-item-hover"
+                      : "shopMain-table-info-item"
+                  }
                   key={item.address}
                   onClick={() => {
                     this.showFullInformation(index);
                   }}
                 >
-                  <div className="shopMain-table-info-item-address">
+                  <div
+                    className="shopMain-table-info-item-address"
+                    key={item.id + item.address}
+                  >
                     {item.address}
                   </div>
                   <div className="shopMain-table-info-item-metro">
@@ -67,6 +79,7 @@ export class ShopsMainTable extends Component {
                           {i.color && (
                             <div
                               className="shopMain-table-info-item-metro-style"
+                              key={i.color}
                               style={{ border: `5px solid ${i.color}` }}
                             />
                           )}
@@ -81,7 +94,10 @@ export class ShopsMainTable extends Component {
                     {item.period}
                   </div>
                 </div>
-                <div className="shopMain-table-info-item-fullInfo">
+                <div
+                  className="shopMain-table-info-item-fullInfo"
+                  key={item.road}
+                >
                   {item.open && (
                     <div className="shopMain-table-info-item-fullInfo-block">
                       <div className="shopMain-table-info-item-fullInfo-address">
@@ -89,12 +105,17 @@ export class ShopsMainTable extends Component {
                         <p>{item.road}</p>
                       </div>
                       <div className="shopMain-table-info-item-fullInfo-map-links">
-                        <div onClick={this.props.changeActiveMap}
-                          className="shopMain-table-info-item-fullInfo-map-links-change">
+                        <div
+                          onClick={this.props.changeActiveMap}
+                          className="shopMain-table-info-item-fullInfo-map-links-change"
+                        >
                           Показать на карте
                         </div>
                         <div className="shopMain-table-info-item-fullInfo-map-link">
-                          <a href={item.link} target='_blank'>Построить маршрут <br/>на Яндекс картах</a>
+                          <a href={item.link} target="_blank">
+                            Построить маршрут <br />
+                            на Яндекс картах
+                          </a>
                         </div>
                       </div>
                     </div>

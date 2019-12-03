@@ -18,7 +18,7 @@ export class ShopsMain extends Component {
 
   componentDidMount = () => {
     this.setState({
-      filteredInfo: this.props.info,
+      filteredInfo: this.props.info.slice(),
       currentCity: this.props.currentCity
     });
   };
@@ -28,7 +28,7 @@ export class ShopsMain extends Component {
       this.setState({
         inputValue: '',
         currentCity: this.props.currentCity,
-        filteredInfo: this.props.info,
+        filteredInfo: this.props.info.slice(),
         shownBlock: false
       });
     }   
@@ -50,7 +50,7 @@ export class ShopsMain extends Component {
 
   search = e => {
     let arr = [];
-    let filteredInfo = this.props.info;
+    let filteredInfo = this.props.info.slice();
     const val = e.target.value.toLowerCase();
     if (val) {
       filteredInfo = this.props.info.filter(i => {
@@ -98,10 +98,26 @@ export class ShopsMain extends Component {
     });
   };
 
-  selectShop = () => {
+  selectShop = (i) => {
+    let filteredInfo = this.state.filteredInfo;
+    const val = i.split(',')[0].toLowerCase();
+    if (val) {
+      filteredInfo = filteredInfo.filter(i => {
+        return (
+          i.address.toLowerCase().indexOf(val) !== -1 ||
+          i.metro.some(item => {
+            return (
+              item.name.toLowerCase().indexOf(val) !== -1
+            );
+          })
+        );
+      });
+    }
+
     this.setState({
-      inputValue: "",
-      shownBlock: false
+      inputValue: i,
+      shownBlock: false,
+      filteredInfo
     });
   };
 
@@ -114,7 +130,6 @@ export class ShopsMain extends Component {
     const shadowClasses = {
       boxShadow: this.state.shadow ? "0 4px 10px rgba(0,0,0,0.1)" : ""
     };
-
     return (
       <div className="shopMain">
         <div className="shopMain-wrapper">
@@ -139,14 +154,17 @@ export class ShopsMain extends Component {
               />
               <span className="shopMain-search-btn">Найти</span>
               {this.state.shownBlock && (
-                <DropDown autocomplete={this.state.autocomplete} />
+                <DropDown 
+                  autocomplete={this.state.autocomplete} 
+                  selectShop={this.selectShop}
+                />
               )}
             </div>
           </div>
           {this.state.isOpenList && (
             <ShopsMainTable
               info={this.state.filteredInfo}
-              currentCity={this.props.currentCity}
+              currentCity={this.state.currentCity}
               changeActiveMap={this.changeActiveMap}
               inputValue={this.state.inputValue}
             />

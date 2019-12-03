@@ -16,6 +16,8 @@
   color: #999;
   transition: .3s;
   cursor: pointer;
+  max-height: 26px;
+  padding-bottom: 5px;
 }
 
 .shopMain-block-nothing-arr:hover{

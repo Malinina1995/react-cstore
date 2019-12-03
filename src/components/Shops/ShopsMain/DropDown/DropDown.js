@@ -4,8 +4,6 @@ import "./DropDown.css";
 export class DropDown extends Component {
   state = {};
 
-  selectShop = () => {
-  };
 
   render() {
 
@@ -15,7 +13,7 @@ export class DropDown extends Component {
           this.props.autocomplete.map(i =>{
             return <div key={i}
             className="shopMain-block-nothing-arr"
-            onClick={this.selectShop}
+            onClick={()=>{this.props.selectShop(i)}}
           >
             {i}
           </div>
