@@ -136,14 +136,16 @@
 .filtersMain{
   margin: 0;
   padding: 0;
-  height: 622px;
   box-sizing: border-box;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
 }
 
 .filtersMain-wrapper{
   max-width: 984px;
   margin: 0 auto;
-  height: 100%;
 }
 
 .currentFilter {
@@ -160,12 +162,6 @@
   -webkit-user-select: none;      
 }
 
-.filtersMain{
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 2.5s;
-  animation-name: fade;
-  animation-duration: 2.5s;
-}
 
 .filterMain-products{
   display: flex;
@@ -229,4 +225,11 @@
   color: #999;
   display: block;
   margin: 10px;
+}
+
+.product-oldPrice{
+  font-size: 14px;
+  color:#999;
+  margin-left: 5px;
+  text-decoration: line-through;
 }

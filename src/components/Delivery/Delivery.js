@@ -5,6 +5,8 @@ import { DeliveryMethods } from './DeliveryMethods/DeliveryMethods';
 import { WaysOfPayment } from './WaysOfPayment/WaysOfPayment';
 import { Banner } from '../Home/BannerForHomePage/Banner';
 import { WelcomeAccordion } from '../WelcomeAccordion/WelcomeAccordion';
+import { FiltersMain } from '../Home/Filters/FiltersMain';
+import salesLeaders from '../../jsonFiles/salesLeaders.json';
 
 const items = [
   { to: '/', label: 'Главная' },
@@ -37,6 +39,13 @@ export class Delivery extends Component {
     classesDelivery += this.state.openedDelivery ? ' delivery-title-active' : '';
     classesPayments += this.state.openedPayments ? ' delivery-title-active' : '';
 
+    const currentFilter = {
+      title: 'Лидеры продаж',
+      products: salesLeaders
+    }
+
+    const delivery = true;
+
     return (
       <div className="delivery">
         <div className="delivery-wrapper">
@@ -48,11 +57,12 @@ export class Delivery extends Component {
               <div className={classesPayments} onClick={this.changeToPayments}>Способы оплаты</div>
             </div>
           </div>
-          {
-            this.state.openedDelivery ? <DeliveryMethods /> : <WaysOfPayment />
-          }
+          <DeliveryMethods openedDelivery={this.state.openedDelivery}/>
         </div>
         <Banner/>
+        <div className='delivery-header-marginTop'>
+          <FiltersMain currentFilter={currentFilter} delivery={delivery}/>
+        </div>
         <WelcomeAccordion/>
       </div>
     );

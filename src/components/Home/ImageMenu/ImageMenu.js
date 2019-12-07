@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import './imageMenuStyle.css';
 
-export class ImageMenu extends Component {
-
-  render(){
+export function ImageMenu() {
     return (
       <div className='imageMenu'>
         <div className='imageMenu-wrapper'>
@@ -40,5 +38,5 @@ export class ImageMenu extends Component {
         </div>
       </div>
     )
-  }
+  
 }

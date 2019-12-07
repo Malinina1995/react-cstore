@@ -30,3 +30,8 @@
   border-bottom: 1px solid #3e8fcf;
   color: #3e8fcf;
 }
+
+.delivery-header-marginTop{
+  padding-top: 30px;
+  margin-bottom: 60px;
+}

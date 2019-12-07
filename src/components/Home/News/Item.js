@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 
-export class Item extends Component {
-  render(){
+export function Item(props) {
     const style={
-      background: `url(${this.props.item.image}) no-repeat`,
+      background: `url(${props.item.image}) no-repeat`,
       width: "472px",
       height: "350px",
       backgroundPosition: "center",
@@ -14,12 +13,12 @@ export class Item extends Component {
           <a href='#'></a>
         </div>
         <div className='item-info'>
-          <div className='item-date'>{this.props.item.date}</div>
+          <div className='item-date'>{props.item.date}</div>
           <div className='item-info-title'>
-            <a href='#'>{this.props.item.title}</a>
+            <a href='#'>{props.item.title}</a>
           </div>
           <div className='item-info-text'>
-            <p>{this.props.item.main}</p>
+            <p>{props.item.main}</p>
           </div>
           <div className='item-info-link'>
             <a href='#'>Все новости</a>
@@ -27,5 +26,5 @@ export class Item extends Component {
         </div>
       </div>
     )
-  }
+  
 }

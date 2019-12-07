@@ -3,8 +3,7 @@ import { Item } from './Item';
 import item from '../../../jsonFiles/news.json';
 import './newsStyle.css';
 
-export class News extends Component {
-  render(){
+export function News() {
     return (
       <div className='news'>
         <div className='news-wrapper'>
@@ -26,5 +25,5 @@ export class News extends Component {
         </div>
       </div>
     )
-  }
+
 }

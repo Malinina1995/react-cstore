@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 import { ProductForFilter } from './ProductForFilter';
 
-export class FiltersMain extends Component {
-  render(){
+export function FiltersMain({currentFilter, delivery}) {
     return (
       <div className='filtersMain'>
         <div className='filtersMain-wrapper'>
-          <div className='currentFilter'>{this.props.currentFilter.title}</div>
+          <div className='currentFilter'>{currentFilter.title}</div>
           <div className='filterMain-products'>
-            {this.props.currentFilter.products.map((prod)=>{
+            {currentFilter.products.map((prod)=>{
               return (
                 <div className='filterMain-product' key={prod.url}>
-                  <ProductForFilter product={prod}/>
+                  <ProductForFilter product={prod} delivery={delivery}/>
                 </div>
                 );
             })}
@@ -19,5 +18,4 @@ export class FiltersMain extends Component {
         </div>
       </div>
     )
-  }
 }

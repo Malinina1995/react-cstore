@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 
-export class Slide extends Component {
-
-  render() {
+export function Slide(props) {
     const imgStyle = {
-      backgroundImage: `url(${this.props.url})`
+      backgroundImage: `url(${props.url})`
     };
     return (
       <div className="mySlides fade">
@@ -13,5 +11,5 @@ export class Slide extends Component {
         </a>
       </div>
     );
-  }
+
 }
