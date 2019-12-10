@@ -1,0 +1,30 @@
+[
+  {
+    "link":"https://www.c-store.ru/product/apple-macbook-pro-13-core-i5-2-4-ggc-8-gb-512-gb-ssd-iris-plus-655-touch-bar/5578427",
+    "url":"https://cdn.c-store.ru/upload/iblock/1ba/1558466457000_1480939.jpg/resize/150x210/",
+    "name":"Apple MacBook Pro 13\" Core i5 2,4 ГГц, 8 ГБ, 512 ГБ SSD, Iris Plus 655, Touch Bar (серый космос)",
+    "price":"159 990 р.",
+    "oldPrice":"171 990"
+  },
+  {
+    "link":"https://www.c-store.ru/product/apple-ipad-10-2-wi-fi-32gb-2019-new/5633135",
+    "url":"https://cdn.c-store.ru/upload/iblock/776/ipad-wifi-select-space-201909_geo_ru.jpg/resize/150x210/",
+    "name":"Apple iPad 10.2 Wi-Fi 32Gb 2019 New (серый космос)",
+    "price":"27 990 р.",
+    "oldPrice":""
+  },
+  {
+    "link":"https://www.c-store.ru/product/apple-watch-series-4-40-mm-korpus-iz-zolotistogo-alyuminiya-sportivnyy-braslet-cveta-rozovyy-pesok/4672814",
+    "url":"https://cdn.c-store.ru/upload/iblock/c89/44-alu-gold-sport-loop-pink-sand-nc-s4-gallery1_geo_ru.jpg/resize/150x210/",
+    "name":"Apple Watch Series 4, 40 мм, корпус из золотистого алюминия, спортивный браслет цвета «розовый песок» (золотистый)",
+    "price":"26 990 р.",
+    "oldPrice":"31 990"
+  },
+  {
+    "link":"https://www.c-store.ru/product/apple-iphone-11-pro-256gb/5633204",
+    "url":"https://cdn.c-store.ru/upload/iblock/3fc/iphone_11_pro_mg_2.jpg/resize/150x210/",
+    "name":"Apple iPhone 11 Pro 256GB (темно-зеленый)",
+    "price":"103 990 р.",
+    "oldPrice":""
+  }
+]

@@ -1,0 +1,32 @@
+.login-wrapper{
+  max-width: 984px;
+  margin: 0 auto;
+}
+
+.login-title{
+  padding: 0;
+  margin: 0 0 25px 15px;
+  font-size: 34px;
+  font-weight: normal;
+}
+
+.login-title-flex{
+  display: flex;
+  justify-content: start;
+  border-bottom: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  margin-left: 15px;
+}
+
+.login-title-flex-filter{
+  cursor: pointer;
+  transition: .3s;
+  box-sizing: border-box;
+  height: 46px;
+  padding: 10px 20px 15px;
+}
+
+.login-title-active{
+  border-bottom: 1px solid #3e8fcf;
+  color: #3e8fcf;
+}
