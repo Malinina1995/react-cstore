@@ -5,6 +5,7 @@ import { Home } from "../Home/Home";
 import { Corp } from "../Corp/Corp";
 import { Shops } from "../Shops/Shops";
 import { Delivery } from '../Delivery/Delivery';
+import { Login } from '../Login/Login';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 export function App() {
@@ -16,6 +17,7 @@ export function App() {
             <Route path="/corp" component={Corp} />
             <Route path="/shops" component={Shops} />
             <Route path="/delivery" component={Delivery} />
+            <Route path="/login" component={Login} />
           </Switch>
         <Footer />
     </Router>
